@@ -1,0 +1,145 @@
+.buy-1 {
+    padding: 5px;
+    background: transparent;
+    border: 2px solid #e0d06e;
+    color: #e0d06e;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    z-index: 3;
+}
+.buy-1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 100%;
+    background: #e0d06e;
+    z-index: 0;
+    transition: .2s ease-in-out;
+    border-radius: 10px;
+}
+.buy-1:hover::after {
+    width: 100%;
+    transform: scale(1.05);
+    z-index: -1;
+}
+.buy-1:hover {
+    color: #33322e;
+}
+.buy-1:active {
+    transform: scale(1.06);
+}
+
+
+/* BUTTON 2 */
+.buy-2 {
+    padding: 5px;
+    border-radius: 5px;
+    background: transparent;
+    color: #f0eedc;
+    border: 1px solid #f0eedc;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: clamp(12px,2vw,15px);
+    text-align: center;
+}
+.buy-2:hover {
+    background: #f0eedc91;
+}
+.buy-2:active{
+    transform: scale(.97);
+}
+
+.buy-3 {
+    background: #e0d06e;
+    border: 2px solid #e0d06e;
+    justify-self: flex-end;
+    color: #33322e;
+    cursor: pointer;
+    text-wrap: nowrap;
+    z-index: 4;
+}
+
+/* SCROLL BUTTONS */
+.scroll-btn-up {
+    background: #e0d06e;
+    border: none;
+    height: 35px;
+    cursor: pointer;
+    color: #333;
+    width: 35px;
+    font-weight: bolder;
+    font-size: 26px;
+    position: fixed;
+    z-index: 5;
+    top: 80vh;
+    left: 1%;
+}
+
+.scroll-btn-down {
+    background: #e0d06e;
+    border: none;
+    height: 35px;
+    font-size: 26px;
+    cursor: pointer;
+    color: #333;
+    width: 35px;
+    font-weight: bolder;
+    position: fixed;
+    z-index: 5;
+    top: 90%;
+    left: 1%;
+}
+
+.fin{
+    position: fixed;
+    width: 70px;
+    height: 108px;
+    top: 0;
+    right: 0;
+    z-index: 4;
+}
+.fin-2{
+    position: fixed;
+    width: 70px;
+    height: 108px;
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
+
+
+/* NEXT BUTTONS */
+.next-btn {
+    font-weight: bolder;
+    font-size: 32px;
+    padding: 10px;
+    border-radius: 50%;
+    width: 55px;
+    background: #e6e0b0;
+    color: #333;
+    border: none;
+    z-index: 4;
+    transform: translateX(-30%);
+    transform: scale(.8);
+    height: auto;
+    cursor: pointer;
+}
+
+.back-btn {
+    font-weight: bolder;
+    font-size: 32px;
+    padding: 10px;
+    border-radius: 50%;
+    width: 55px;
+    background: #e6e0b0;
+    color: #333;
+    border: none;
+    z-index: 4;
+    transform: translateX(30%);
+    transform: scale(.8);
+    height: auto;
+    cursor: pointer;
+}

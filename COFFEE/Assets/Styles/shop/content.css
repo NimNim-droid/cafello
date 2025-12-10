@@ -1,0 +1,188 @@
+.shop-content-1{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    overflow: hidden;
+    overflow-y: scroll;
+    background: #edefef04;
+    width: 100%;
+}
+.s-nav {
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 100%;
+padding: 10px 30px;
+/* background: linear-gradient(#ed5c5c,#6c1d1d); */
+background: linear-gradient(90deg,#eddd76f8,#f6f6ace1);
+object-fit: contain;
+background-position: center;
+background-repeat: no-repeat;
+border-bottom: 2px solid #edefef;
+}
+.s-nav-2 {
+padding-top: 35px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 100%;
+}
+
+.total-order {
+    padding: 0 5px;
+    color: #3d3e37db;
+    font-size: clamp(16px, 2vw, 20px);
+}
+.shop-int-1 {
+    text-align: start;
+    padding-left: 10px;
+    color: #3d3e37db;
+}
+.shop-int-2 {
+    display: flex;
+    align-items: center;
+}
+.check-order {
+    padding: 5px;
+    background:linear-gradient(#5de35d,#37610eda);
+    border: 2px outset #215718;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 5;
+    color: #edefef;
+    transition: .15s ease-in-out;
+}.check-order:hover {
+    transform: scale(1.05);
+}.check-order:active {
+    transform: scale(.9);
+}
+
+/* COFFEE MENU */
+.coffee-menu {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.coffee-menu-scroll {
+    display: flex;
+    width: 100%;
+    border: 5px solid #ffffff1a;
+    margin: 0 auto;
+    height: auto;
+    gap: 5px;
+    padding: 5px;
+    margin-top: 35px;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    background: #ffffff1a;
+}
+
+
+
+.card-1,.card-2,.card-3 {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-width: 260px;
+    height: 300px;
+    border-radius: 10px;
+    padding: 5px;
+    background: radial-gradient(#fdfdfd3e,#fdfdfd0f,#2e2d2d00);
+    transition: .2s ease-in-out;
+}
+
+.promo {
+    background: linear-gradient(90deg,#d63125e7, #de3724db,#f7c1aa00);
+    width: 60px;
+    color: #edefef;
+    padding: 5px;
+    position: relative;
+}
+
+.shop-index {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+    flex-direction: column-reverse;
+}
+
+
+.shop-image  {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    aspect-ratio: 1/1;
+    border-radius:10px 10px 0 0 ;
+    background: transparent; 
+}
+.shop-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 20%;
+    padding: 5px;
+}
+
+
+.info {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: space-between;
+    padding: 7px;
+}
+
+.coffee-name {
+    font-size: clamp(15px,1.6vw, 18px);
+    color: #edefef;
+    text-align: start;
+    width: 100%;
+}
+
+.value {
+    font-size: clamp(13px, 2.1vw,18px);
+    color: #bce495cd;
+    text-align: end;
+    align-self: flex-start;
+    z-index: 2;
+    width: 100%;
+}
+
+.order {
+    padding: 5px;
+    background: #f6f6ace1;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 30px;
+    transition: .1s ease-in-out;
+}
+.order:hover {
+    transform: scale(1.04);
+}
+.order:active {
+    transform: scale(1);
+    background: #bdea98e7;
+}
+
+
+
+
+@media screen and (max-width:768px) {
+    .shop-content-1 {
+        padding: 5px;
+    }
+    .coffee-menu {
+        width: 100%;
+    }
+}

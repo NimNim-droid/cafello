@@ -1,0 +1,46 @@
+main {
+    height: 90vh;
+    overflow-y: scroll;
+    scroll-snap-type: y proximity;
+}
+main > section {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+
+.container-1 {
+    background: linear-gradient(#4d49497c,#101010de), url(/Assets/Images/wood-plank.jpeg);
+    background-size: contain;
+    overflow: hidden;
+    height: 90vh;
+    width: 100%;
+}
+.container-2 {
+    background: linear-gradient(#101010de,#4d49497c, #101010de), url(/Assets/Images/wood-plank.jpeg);
+    background-size: contain;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    height: 90vh;
+}
+
+.container-3 {
+    background: linear-gradient(#101010de,#4d49497c), url(/Assets/Images/wood-plank.jpeg);
+    background-size: contain;
+    overflow: hidden;
+    width: 100%;
+    height: 90vh;
+}
+
+@media screen and (max-width:768px) {
+    main {
+        scroll-snap-type: y proximity;
+    }
+    
+}

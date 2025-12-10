@@ -1,0 +1,74 @@
+/* UNIVERSAL CSS */
+@import "navbar.css";
+@import "container.css";
+@import "content.css";
+@import "buttons.css";
+
+/* ABOUT US */
+@import "/Assets/Styles/about/content.css";
+/* SHOP */
+@import "/Assets/Styles/shop/container.css";
+@import "/Assets/Styles/shop/content.css";
+/* SIGN IN */
+@import "/Assets/Styles/sign/content.css";
+
+
+/* ADS */
+@import "ads.css";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    font-family: sans-serif;
+    scrollbar-width: none;
+}
+main {
+    overflow: auto;
+}
+
+h1{
+    color: #efe5a7;
+}
+
+::-webkit-scrollbar {
+    background: #efe5a72d;
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #333;
+    cursor: pointer;
+    border-radius: 5px;
+}
+hr {
+    width: 100%;
+}
+
+footer {
+    background: #333;
+    display: flex;
+    width: 100%;
+    color: #eaf7aa35;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+.foot-links {
+    display: flex;
+    gap: 20px;
+}
+.link-1, .link-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+.link-1 a,.link-2 a{
+    text-decoration: none;
+    color: #eaf7aa35;
+}

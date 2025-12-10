@@ -1,0 +1,169 @@
+.back {
+    height: 100vh;
+}
+
+.sign-container {
+    background: linear-gradient(#101010c9, #101010f6), url(/Assets/Images/Back-C4.jpeg);
+    height: 100vh;
+}
+
+
+.sign-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 25px;
+}
+.text {
+    text-decoration: none;
+    color: #edefef;
+    align-self: flex-start;
+}.text:hover {
+    text-decoration: underline;
+}
+
+.sign-box-2 {
+    max-width: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    background: #2a2929;
+    box-shadow: 0 0 15px;
+    border-radius: 10px;
+    padding: 25px;
+}
+.sign-logo {
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    align-items: end;
+    display: flex;
+    margin-bottom: 25px;
+}.sign-image {
+    width: 40px;
+    box-sizing: border-box;
+}
+.sign-image img {
+height: 100%;
+width: 100%;
+object-fit: contain;
+}
+.sign-logo h1 {
+    translate: -5px -3px;
+}
+
+.int {
+    margin-bottom: 5px;
+}
+
+.user-input {
+    width: 80%;
+    height: 30px;
+    padding: 6px;
+    border-radius: 5px;
+    border: 2px solid #fdeca65d;
+    background: #827f7f2c;
+    color: #edefef;
+}
+.pass-input {
+    width: 100%;
+   height: 100%; 
+    padding: 6px;
+    border-radius: 5px 0 0 5px;
+    border: 2px solid #fdeca65d;
+    border-right: none;
+    background: #827f7f2c;
+    color: #edefef;
+}
+.user-input:focus, .pass-input:focus {
+    box-shadow: 0 0 15px #fdeca65d;
+}
+
+.pass {
+    width: 80%;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+}
+.togglepass {
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: #827f7f2c;
+    border: 2px solid #fdeca65d;
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+    height: 30px;
+    width: 7%;
+}
+.togglepass img {
+    width: 20px;
+    background: none;
+}
+
+.wrong-msg {
+    display: none;
+    color: #df5050;
+}
+.remember {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    color: #e0d7a7c9;
+    font-size: 14px;
+}.remember input {
+    cursor: pointer;
+}
+.log {
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+    transition: .1s ease-in-out;
+    background: #ebe09e;
+    font-weight: bold;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}.log:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 5px #ebe09e;
+}.log:active {
+    transform: scale(1);
+}
+.forgotpass {
+    font-size: 13px;
+    background: none;
+    border: none;
+    color: #ebe09ecc;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media screen and (max-width:768px) {
+.sign-box-2 {
+    max-width: 355px;
+    width: 100%;
+    margin: 0 auto;
+}    
+.togglepass img {
+    transform: scale(.8);
+}
+.user-input {
+    width: 100%;
+}
+.pass {
+    width: 100%;
+}
+.log {
+    width: 100%;
+    color: #334f;
+}
+}

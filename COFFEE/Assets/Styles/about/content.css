@@ -1,0 +1,192 @@
+.content-3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 55px;
+    height: 75%;
+    width: 90%;
+    background: linear-gradient(#1b1b1bd2,#232222), url(/Assets/Images/coffee-back.jpeg);
+    background-repeat: no-repeat;
+    box-shadow: 0 0 25px;
+    border-radius: 5px;
+    background-size: cover;
+    border-left: 3px solid #cbcfd1;
+}
+
+.sect-3 {
+    width: 100%;
+    align-items: center;
+}
+
+.int-3 {
+    background: linear-gradient(#cbcfd1,#e0d06e);
+    background-clip: text;
+    color: transparent;
+    width: 100%;
+    padding: 0px 15px 35px;
+    font-size: clamp(22px, 3.2vw, 54px);
+
+}
+.int-text , .qst{
+    color: #cbcfd1;
+    padding-bottom: 15px;
+    align-self: flex-start;
+    font-size: clamp(16px,2.2vw,25px);
+}
+
+.descript {
+    
+    display: flex;
+    overflow-y: auto;
+    scrollbar-width: 1px;
+    scrollbar-color: #cbcfd1;
+    flex-direction: column;
+    justify-content: space-between;
+    text-wrap: wrap;
+    padding: 10px;
+    background: #cbcfd10b;
+    color: #cbcfd1;
+    border-radius: 5px;
+    font-size: clamp(14px ,1.5vw, 24px);
+    width: 100%;
+    height: 100%;
+}
+
+
+@media screen and (max-width:768px) {
+    .content-3 {
+        padding: 10px;
+        
+    }
+    .descript {
+        padding: 5px;
+    }
+    
+}
+
+/* OUTLINE CSS */
+
+.qst-a {
+    color: #cbcfd1;
+    padding-bottom: 15px;
+    align-self: flex-start;
+    padding: 5px;
+    font-size: clamp(14px ,1.5vw, 22px);
+}
+
+.descript-about {
+    
+    display: flex;
+    overflow-y: auto;
+    scrollbar-width: 1px;
+    scrollbar-color: #cbcfd1;
+    flex-direction: column;
+    justify-content: space-between;
+    text-wrap: wrap;
+    padding: 10px;
+    background: #cbcfd10b;
+    color: #cbcfd1;
+    border-radius: 5px;
+    font-size: clamp(14px ,1.5vw, 22px);
+    width: 100%;
+}
+
+.container-about-1 {
+    background: linear-gradient(#4d49497c,#101010de), url(/Assets/Images/wood-plank.jpeg);
+    background-size: contain;
+    padding: 20px;
+    overflow: hidden;
+    width: 100%;
+}
+.content-about-1 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: start;
+    overflow: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    padding: 55px;
+    width: 90%;
+    background: linear-gradient(#1b1b1bd2,#232222), url(/Assets/Images/coffee-back.jpeg);
+    background-repeat: no-repeat;
+    box-shadow: 0 0 25px;
+    border-radius: 5px;
+    background-size: cover;
+    border-left: 3px solid #cbcfd1;
+}
+.area-1 {
+    padding: 5px;
+}
+.area-2 {
+    padding: 5px;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.int-members {
+    font-size: clamp(22px,2vw,25px);
+    color: #cbcfd1;
+    justify-self: flex-start;
+    align-self: flex-start;
+}
+
+/* PROFILE ONE */
+.profile {
+    display: flex;
+    justify-content: start;
+
+    width: 100%;
+    height: 60%;
+}
+
+.table-1, .table-2{
+    background: #33333333;
+    padding: 5px;
+    gap: 5px;
+    width: 40%;
+    max-width: 340px;
+    border-radius: 50% 50% 0 0;
+    display: flex;
+    flex-direction: column;
+    transform: scale(.7);
+    text-align: center;
+    align-items: center;
+}
+.profile-image {
+background: #af9d9d;
+overflow: hidden;
+box-sizing: border-box;
+border-radius: 50%;
+aspect-ratio: 1/1;
+height: 100%;
+}.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-name {
+    font-size: 19px;
+    color: #cbcfd1;
+}
+
+.profile-career {
+    color: #cbcfd18f;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+
+
+/* .container-about-2 {
+    background: linear-gradient(#101010de,#4d49497c), url(/Assets/Images/wood-plank.jpeg);
+    background-size: contain;
+    overflow: hidden;
+    height: 90vh;
+    width: 100%;
+} */

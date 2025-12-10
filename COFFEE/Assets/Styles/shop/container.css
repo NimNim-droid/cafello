@@ -1,0 +1,12 @@
+.shop-container-1 {
+    background: linear-gradient(#4d49497c,#101010de), url(/Assets/Images/wood-plank.jpeg);
+    background-size: contain;
+    overflow: auto;
+    display: block;
+    width: 100%;
+}
+
+/* MAIN */
+header {
+    background: #ef6666;
+}
